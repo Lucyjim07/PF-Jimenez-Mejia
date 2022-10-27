@@ -175,6 +175,10 @@ footer ul li {
         background-color: gainsboro;
     }
 
+    .info_formulario {
+        width: 100%;
+    }
+
     .grid-footer-container {
         display: grid;
         grid-template-columns: 1fr;
