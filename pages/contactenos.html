@@ -1,54 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Pet-Shop</title>
-</head>
-<body>
-    <header class="hero">
-        <nav>
-            <h2 class="logo">Logo</h2>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="quienes-somos.html">Quienes somos</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main class="contenedor">
-        <section class="imagen_principal">
-            <img src="" alt="Imagen principal">
-        </section>
-        <h2>Contactenos</h2>
-    </main>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <title>Pet-Shop</title>
+    </head>
+    <body class="container">
+        <header class="hero">
+            <nav>
+                <h2 class="logo">Logo</h2>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="quienes-somos.html">Quienes somos</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <footer>
-        <section class="marca">
-            <h2 class="logo">Logo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laboriosam sunt labore architecto deserunt adipisci obcaecati numquam, velit neque blanditiis explicabo soluta perspiciatis corrupti eligendi nemo asperiores excepturi esse. Ducimus!</p>
-        </section>
-        <section class="contacto">
-            <h2 class="logo">Contactenos</h2>
-            <ul>
-                <li>300 123456</li>
-                <li>300 947596</li>
-                <li>300 126780</li>
-                <li>300 983526</li>
-            </ul>
-        </section>
-        <section class="redes_sociales">
-            <h2 class="logo">Nuestras redes sociales</h2>
-            <img src="../img/icon1.png" alt="Icono">
-            <img src="../img/icon1.png" alt="Icono">
-            <img src="../img/icon1.png" alt="Icono">
-            <img src="../img/icon1.png" alt="Icono">
-        </section>
-    </footer>
-</body>
+        <main class="contenedor">
+            <div class="imagen_principal">
+                <img src="" alt="Imagen principal" />
+            </div>
+            <div class="text-center">
+                <h2>Contactenos</h2>
+            </div>
+
+            <div class="info">
+                <div class="info_contenido">
+                    <p>
+                        Lorem ipsCum dolor sit amet consectetur adipisicing
+                        elit. Harum esse enim vel! Error maiores eaque nulla
+                        quibusdam sapiente! Repudiandae rem accusamus ipsum
+                        eaque! Ad ea, possimus minima molestiae iusto placeat!
+                    </p>
+                </div>
+                <div class="info_formulario">
+                    <form class="row">
+                        <div class="col-md-12">
+                            <div class="form-floating mb-3 col-md-12">
+                                <input type="text" class="form-control" id="nameInput" placeholder="Nombre"/>
+                                <label for="nameInput">Nombre</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                <label for="inputEmail" class="form-label">Email</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="inputTelefono" placeholder="Teléfono">
+                                <label for="inputTelefono" class="form-label">Teléfono</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-floating mb-3 col-12">
+                                <input type="text" class="form-control" id="inputDireccion" placeholder="Dirección" />
+                                <label for="inputDireccion" class="form-label">Dirección</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="selectServicio" aria-label="Floating label select example">
+                                <option value="1">Clínica Veterinaria</option>
+                                <option value="2">Baños y Peluquería</option>
+                                <option value="3">Guardería</option>
+                                </select>
+                                <label for="selectServicio">Servicios</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-floating mb-3 col-12">
+                                <textarea class="form-control" placeholder="Mensaje" id="textareaMensaje" style="height: 180px"></textarea>
+                                <label for="textareaMensaje">Mensaje</label>
+                            </div>
+                        </div>
+
+                        <div class=" text-center col-12">
+                            <button type="submit" class="btn btn-primary btn-scale-color">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="grid-footer-container">
+            <div>
+                <h2 class="logo">Logo</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores laboriosam sunt labore architecto deserunt adipisci
+                    obcaecati numquam, velit neque blanditiis explicabo soluta
+                    perspiciatis corrupti eligendi nemo asperiores excepturi
+                    esse. Ducimus!
+                </p>
+            </div>
+            <div>
+                <h2 class="logo">Contactenos</h2>
+                <ul>
+                    <li>300 123456</li>
+                    <li>300 947596</li>
+                    <li>300 126780</li>
+                    <li>300 983526</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="logo">Nuestras redes sociales</h2>
+                <img src="../img/icon1.png" alt="Icono" />
+                <img src="../img/icon1.png" alt="Icono" />
+                <img src="../img/icon1.png" alt="Icono" />
+                <img src="../img/icon1.png" alt="Icono" />
+            </div>
+        </footer>
+    </body>
 </html>

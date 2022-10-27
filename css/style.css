@@ -46,9 +46,8 @@ nav ul li a:hover {
 
 .info {
     display: flex;
-    margin: 5% 3% 5%;
+    padding: 5% 3% 5%;
 }
-
 
 .info_contenido {
     width: 50%;
@@ -59,8 +58,12 @@ nav ul li a:hover {
 
 .info_imagen {
     height: 250px;
-    width: 50%;
+    width: 60%;
     background-color: gainsboro;
+}
+
+.info_formulario {
+    width: 50%;
 }
 
 .items {
@@ -85,6 +88,18 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
+.btn-scale-color {
+    background-color: hotpink;
+    border: 1px solid hotpink;
+    transition: .4s;
+}
+
+.btn-scale-color:hover {
+    background-color: hotpink;
+    border: 1px solid hotpink;
+    transform: scale(1.3);
+}
+
 img {
     height: 56px;
 }
@@ -96,7 +111,7 @@ footer {
 }
 
 
-.contacto ul li {
+footer ul li {
     list-style-type: none;
 } 
 
