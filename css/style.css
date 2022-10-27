@@ -14,7 +14,8 @@ nav {
 
 .logo {
     color: hotpink;
-    font-size: 28px;
+    font-size: 32px;
+    padding-left: 12px;
 }
 
 nav ul li {
@@ -34,14 +35,23 @@ nav ul li a:hover {
     transition: .3s;
 }
 
+.logo-imagen {
+    width: 48px;
+    height: auto;
+}
+
 .contenedor{
     background-color: floralwhite;
 }
 
-.imagen_principal {
-    height: 350px;
+.contenedor-logo-imagen {
+    display: flex;
+    align-items: center;
+}
+
+.imagen-fondo {
     width: 100%;
-    background-color: gainsboro;
+    height: auto;
 }
 
 .info {
