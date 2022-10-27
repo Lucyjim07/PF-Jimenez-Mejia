@@ -6,6 +6,9 @@
 }
 
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 30px 10% 30px 10%;
     background-color: bisque;
 }
@@ -43,6 +46,7 @@ nav ul li a:hover {
 }
 
 .info {
+    display: flex;
     margin: 5% 3% 5%;
 }
 
@@ -87,6 +91,7 @@ img {
 }
 
 footer {
+    display: flex;
     background-color: beige;
     padding: 50px;
 }
