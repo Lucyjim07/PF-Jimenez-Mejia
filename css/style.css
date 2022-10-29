@@ -51,6 +51,16 @@ nav ul li a:hover {
     font-size:16px ;
 }
 
+.text-justify{
+    text-align: justify;
+  }
+
+.color-h2{
+    color: hotpink;
+
+}
+
+
 .contenedor {
     background-color: floralwhite;
 }
