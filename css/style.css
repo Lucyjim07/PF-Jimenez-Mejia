@@ -15,7 +15,10 @@ nav {
 .logo {
     color: hotpink;
     font-size: 32px;
-    padding-left: 12px;
+}
+
+.logo-espacio {
+    margin: 0;
 }
 
 nav ul li {
@@ -36,11 +39,19 @@ nav ul li a:hover {
 }
 
 .logo-imagen {
+    padding-right: 20px;
     width: 100px;
     height: auto;
 }
 
-.contenedor{
+.estilo-marca-logo{
+    color: #144b6c;
+    font-style: italic;
+    font-weight: bold;
+    font-size:16px ;
+}
+
+.contenedor {
     background-color: floralwhite;
 }
 
@@ -123,7 +134,11 @@ footer {
 
 footer ul li {
     list-style-type: none;
-} 
+}
+
+.margen-iconos {
+    margin: 20px;
+}
 
 .grid-services-container {
     display: grid;
@@ -152,7 +167,7 @@ footer ul li {
 
 /* media query para tablet */
 @media only screen and (max-width: 767px) {
-    .container { 
+    .container {
         padding: 0;
         margin-left: 0;
         margin-right: 0;
@@ -167,18 +182,18 @@ footer ul li {
     nav ul li {
         padding: 10px 10px;
     }
-    
+
     .info {
         display: block;
     }
-    
+
     .info_contenido {
         width: 100%;
         padding-top: 20px;
         padding-left: 10px;
         padding-right: 10px;
     }
-    
+
     .info_imagen {
         height: 250px;
         width: 100%;
