@@ -225,6 +225,13 @@ footer ul li {
     vertical-align: middle;
 }
 
+.imagen-quienessomos{
+    max-width: 50%;
+    height:auto;
+    vertical-align:middle;
+    
+}
+
 
 /* media query para celular */
 @media only screen and (max-width: 480px) {
