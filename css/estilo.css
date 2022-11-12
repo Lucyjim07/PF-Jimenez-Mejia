@@ -1,3 +1,43 @@
+.info {
+  display: flex;
+  padding: 5% 3%; }
+  .info .info_contenido {
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .info .contenedor-imagenes {
+    width: 50%;
+    padding: 0 16px;
+    display: grid;
+    gap: 15px;
+    align-items: stretch;
+    grid-template: "img1 img2" "img3 img3"; }
+  .info .info_imagen {
+    height: 250px;
+    width: 50%;
+    background-color: #dcdcdc; }
+  .info .info_formulario {
+    width: 50%; }
+
+/* media query para tablet */
+@media only screen and (max-width: 767px) {
+  .info {
+    display: block; }
+    .info .info_contenido {
+      width: 100%;
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px; }
+    .info .info_imagen {
+      height: 250px;
+      width: 100%;
+      background-color: gainsboro; }
+    .info .contenedor-imagenes {
+      width: 100%; }
+    .info .info_formulario {
+      width: 100%; } }
+
 nav {
   display: flex;
   align-items: center;
@@ -9,12 +49,31 @@ nav {
     display: inline-block;
     padding: 10px 20px; }
     nav ul li a {
-      color: black;
+      font-size: 20px;
+      color: #144b6c;
       text-decoration: none;
       font-weight: bold; }
     nav ul li a:hover {
       color: #ff69b4;
       transition: 0.3s; }
+
+/* media query para celular */
+@media only screen and (max-width: 480px) {
+  nav ul {
+    padding: 0;
+    text-align: center; }
+    nav ul li {
+      display: block; } }
+
+/* media query para tablet */
+@media only screen and (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    padding: 30px 0px; }
+    nav ul li {
+      padding: 10px 10px; }
+      nav ul li a {
+        font-size: 16px; } }
 
 footer {
   display: flex;
@@ -23,6 +82,26 @@ footer {
   footer ul li {
     list-style-type: none; }
 
+.contenedor-logo-imagen {
+  display: flex;
+  align-items: center; }
+  .contenedor-logo-imagen .logo-imagen {
+    padding-right: 20px;
+    width: 100px;
+    height: auto; }
+  .contenedor-logo-imagen .logo-espacio {
+    margin: 0; }
+  .contenedor-logo-imagen .estilo-marca-logo {
+    color: #144b6c;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
 img {
   height: 56px; }
 
@@ -30,19 +109,8 @@ img {
   color: #ff69b4;
   font-size: 32px; }
 
-.logo-espacio {
-  margin: 0; }
-
-.logo-imagen {
-  padding-right: 20px;
-  width: 100px;
-  height: auto; }
-
-.estilo-marca-logo {
-  color: #144b6c;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 16px; }
+.color-titulo {
+  color: #144b6c; }
 
 .text-justify {
   text-align: justify; }
@@ -54,36 +122,14 @@ img {
 .contenedor {
   background-color: #fffaf0; }
 
-.contenedor-logo-imagen {
-  display: flex;
-  align-items: center; }
-
 .imagen-fondo {
   width: 100%;
   height: auto; }
-
-.info {
-  display: flex;
-  padding: 5% 3% 5%; }
-
-.info_contenido {
-  width: 50%;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px; }
 
 .centrado-vertical {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-
-.info_imagen {
-  height: 250px;
-  width: 50%;
-  background-color: #dcdcdc; }
-
-.info_formulario {
-  width: 50%; }
 
 .items {
   padding: 10px 30px; }
@@ -144,14 +190,6 @@ img {
 .imagen:hover {
   transform: scale(1.5); }
 
-.contenedor-imagenes {
-  width: 50%;
-  padding: 0 16px;
-  display: grid;
-  gap: 15px;
-  align-items: stretch;
-  grid-template: "img1 img2" "img3 img3"; }
-
 .flex-columna {
   flex-direction: column; }
 
@@ -168,3 +206,26 @@ img {
   max-width: 50%;
   height: auto;
   vertical-align: middle; }
+
+/* media query para tablet */
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 767px; }
+  .grid-footer-container {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .grid-services-container {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .flex-fila {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+/* media query para pantalla mediana */
+@media only screen and (max-width: 992px) {
+  .contenedor-imagenes {
+    grid-template: "img1" "img2" "img3"; } }

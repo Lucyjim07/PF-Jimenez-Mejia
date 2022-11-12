@@ -1,0 +1,21 @@
+.contenedor-logo-imagen {
+    display: flex;
+    align-items: center;
+
+    .logo-imagen {
+        padding-right: 20px;
+        width: 100px;
+        height: auto;
+    }
+
+    .logo-espacio {
+        margin: 0;
+    }
+
+    .estilo-marca-logo {
+        color: $color_marca;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}

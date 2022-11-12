@@ -1,0 +1,60 @@
+.info {
+    display: flex;
+    padding: 5% 3%;
+
+    .info_contenido {
+        width: 50%;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contenedor-imagenes {
+        width: 50%;
+        padding: 0 16px;
+        display: grid;
+        gap: 15px;
+        align-items: stretch;
+        grid-template:
+            "img1 img2"
+            "img3 img3";
+    }
+
+    .info_imagen {
+        height: 250px;
+        width: 50%;
+        background-color: $color_auxiliar;
+    }
+
+    .info_formulario {
+        width: 50%;
+    }
+}
+
+/* media query para tablet */
+@media only screen and (max-width: 767px) {
+    .info {
+        display: block;
+
+        .info_contenido {
+            width: 100%;
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .info_imagen {
+            height: 250px;
+            width: 100%;
+            background-color: gainsboro;
+        }
+
+        .contenedor-imagenes {
+            width: 100%;
+        }
+
+        .info_formulario {
+            width: 100%;
+        }
+    }
+}
