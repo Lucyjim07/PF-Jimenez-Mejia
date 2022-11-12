@@ -1,0 +1,30 @@
+{
+  "name": "petshop",
+  "version": "1.0.0",
+  "description": "PetShop, cuidado con amor. Proyecto practica de HTML y CSS para curso de CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "css:build": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
+    "css:watch": "nodemon -e scss -x \"npm run css:build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucyjim07/pre-entrega2-Jimenez-Mejia.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "CoderHouse",
+    "SASS"
+  ],
+  "author": "Lucy Jiménez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lucyjim07/pre-entrega2-Jimenez-Mejia/issues"
+  },
+  "homepage": "https://github.com/Lucyjim07/pre-entrega2-Jimenez-Mejia#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

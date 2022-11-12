@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 5% 30px 5%;
-    background-color: bisque;
-}
 
 .logo {
     color: hotpink;
@@ -19,23 +12,6 @@ nav {
 
 .logo-espacio {
     margin: 0;
-}
-
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: hotpink;
-    transition: .3s;
 }
 
 .logo-imagen {
@@ -60,7 +36,6 @@ nav ul li a:hover {
     font-size: 40px;
 
 }
-
 
 .contenedor {
     background-color: floralwhite;
@@ -140,17 +115,6 @@ nav ul li a:hover {
 
 img {
     height: 56px;
-}
-
-footer {
-    display: flex;
-    background-color: beige;
-    padding: 50px;
-}
-
-
-footer ul li {
-    list-style-type: none;
 }
 
 .margen-iconos {
