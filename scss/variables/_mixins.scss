@@ -1,0 +1,9 @@
+@mixin displey-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin vertical-align-auto {
+    height: auto;
+    vertical-align: middle;
+}

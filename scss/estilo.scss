@@ -1,14 +1,15 @@
-@import "variables/variables";
-@import "componentes/panelInformativo";
-@import "componentes/nav";
-@import "componentes/footer";
-@import "componentes/logo";
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+@import "variables/variables";
+@import "variables/mixins";
+@import "componentes/panelInformativo";
+@import "componentes/nav";
+@import "componentes/footer";
+@import "componentes/logo";
 
 img {
     height: 56px;
@@ -42,9 +43,8 @@ img {
 }
 
 .centrado-vertical {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    @include displey-flex-column;
 }
 
 .items {
@@ -95,19 +95,23 @@ img {
     grid-template-columns: 2fr 1fr 1fr;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .imagen1 {
     grid-area: img1;
-    overflow: hidden;
+    @extend .overflow-hidden;
 }
 
 .imagen2 {
     grid-area: img2;
-    overflow: hidden;
+    @extend .overflow-hidden;
 }
 
 .imagen3 {
     grid-area: img3;
-    overflow: hidden;
+    @extend .overflow-hidden;
 }
 
 .imagen {
@@ -131,14 +135,12 @@ img {
 
 .imagen-productos {
     max-width: 100%;
-    height: auto;
-    vertical-align: middle;
+    @include vertical-align-auto;
 }
 
 .imagen-quienessomos {
     max-width: 50%;
-    height: auto;
-    vertical-align: middle;
+    @include vertical-align-auto;
 }
 
 /* media query para tablet */
@@ -161,9 +163,8 @@ img {
     }
 
     .flex-fila {
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        @include displey-flex-column;
     }
 }
 
