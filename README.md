@@ -9,3 +9,8 @@ Proyecto curso de desarrollo web CODERHOUSE
 3. pre-entrega 3-Jimenez-Mejia: Entrega realizada a través de link de GitHub
    * 5 Páginas completas con estilos 
    * Aplicación de scss y SEO
+
+4. Entrega final- Jimenez-Mejia: Entrega realizada a través de link de GitHub
+   * Revision de las paginas
+   * Aplicación de fuente a titulos.
+   * Proyecto Hosteado por medio de Github
