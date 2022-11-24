@@ -6,6 +6,7 @@
 
 @import "variables/variables";
 @import "variables/mixins";
+@import "variables/fuente";
 @import "componentes/panelInformativo";
 @import "componentes/nav";
 @import "componentes/footer";
@@ -141,6 +142,10 @@ img {
 .imagen-quienessomos {
     max-width: 50%;
     @include vertical-align-auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fuente_acme;
 }
 
 /* media query para tablet */
